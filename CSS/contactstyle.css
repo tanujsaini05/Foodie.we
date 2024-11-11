@@ -1,0 +1,148 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111; /* Black background */
+    color: #ddd; /* Light grey text */
+}
+
+.navbar {
+    position: fixed;
+    top: 0; /* Aligns it to the top of the page */
+    left: 0; /* Aligns it to the left side */
+    width: 100%; /* Ensures the navbar spans the entire width of the page */
+    z-index: 1000; /* Puts the navbar above other content */
+    background-color: #111; /* Keeps the background color solid */
+    padding: 10px 50px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #111;
+    height: 80px;
+}
+
+.navbar-logo {
+    color: #ddd;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-decoration: none;
+}
+
+.navbar-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar-links li {
+    margin-left: 30px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+    color: #fff;
+}
+/* Contact Section */
+.contact-section {
+    display: flex;
+    padding: 50px;
+    height: 100vh;
+    padding-top: 170px;
+}
+
+/* Contact Image Styling */
+.contact-image {
+    width: 50%;
+    margin-right: 50px;
+}
+
+.contact-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Contact Details Styling */
+.contact-details {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-details h2 {
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.contact-details p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Contact Info Styling */
+.contact-info {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    background-color: #222; /* Darker black background */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #ddd;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #999;
+}
+
+.contact-form button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: #ddd;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #777;
+}

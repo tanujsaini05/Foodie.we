@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navigation Bar</title>
+<style>
+    /* Basic reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Navbar styling */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #111; /* Dark background color */
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 50px;
+        background-color: #111;
+    }
+
+    .navbar-logo {
+        color: #ddd;
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: 5px;
+        text-decoration: none;
+    }
+
+    .navbar-links {
+        list-style-type: none;
+        display: flex;
+    }
+
+    .navbar-links li {
+        margin-left: 30px;
+    }
+
+    .navbar-links a {
+        text-decoration: none;
+        color: #ddd;
+        font-size: 16px;
+        transition: color 0.3s;
+    }
+
+    .navbar-links a:hover {
+        color: #fff;
+    }
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <a href="#" class="navbar-logo">J. ALISSA</a>
+    <ul class="navbar-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Books</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Client Albums</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</div>
+
+</body>
+</html>
