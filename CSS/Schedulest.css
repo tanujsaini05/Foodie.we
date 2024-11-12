@@ -14,6 +14,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding-top: 100px;
 }
 
 /* Container for the Schedule */
@@ -37,6 +38,7 @@ body {
     color: #fff; /* For text to stand out */
     border-collapse: collapse;
     width: 100%;
+    padding-top: 170px;
 }
 
 .meal-schedule thead th {
@@ -91,4 +93,52 @@ body {
 }
 .meal-schedule tbody td {
     cursor: pointer;
+}
+
+.navbar {
+    position: fixed;
+    top: 0; /* Aligns it to the top of the page */
+    left: 0; /* Aligns it to the left side */
+    width: 100%; /* Ensures the navbar spans the entire width of the page */
+    z-index: 1000; /* Puts the navbar above other content */
+    background-color: #111; /* Keeps the background color solid */
+    padding: 10px 50px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #111;
+    height: 80px;
+}
+
+.navbar-logo {
+    color: #ddd;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-decoration: none;
+}
+
+.navbar-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar-links li {
+    margin-left: 30px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+    color: #fff;
+}
+.mmeal{
+    list-style-type: none;
 }
