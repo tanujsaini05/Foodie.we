@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Meal Schedule</title>
+    <link rel="stylesheet" href="./CSS/Schedulest.css">
+    <script>
+        function editMeal(cell) {
+            // Store the current content
+            let currentContent = cell.innerHTML;
+            
+            // Create an input element and set its value to current content
+            let inputBox = `<input type="text" value="${currentContent}" onblur="saveMeal(this)" />`;
+            
+            // Replace cell content with input field
+            cell.innerHTML = inputBox;
+            
+            // Focus on the input field to allow immediate editing
+            cell.querySelector("input").focus();
+        }
+    
+        function saveMeal(input) {
+            // Save the new content from the input field
+            let newMeal = input.value || "Click to add meal"; // Default text if input is empty
+            
+            // Replace input with the new meal text
+            input.parentNode.innerHTML = newMeal;
+        }
+    </script>
+</head>
+<body>
+    <div class="schedule-container">
+        <h2>Weekly Meal Schedule</h2>
+        <table class="meal-schedule">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Breakfast</th>
+                    <th>Lunch</th>
+                    <th>Dinner</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Monday to Sunday rows -->
+                <tr>
+                    <td>Monday</td>
+                    <td onclick="editMeal(this)">
+                        <ul>
+                            <li>Oatmeal with berries</li>
+                            <li>Black coffee</li>
+                        </ul>
+                    </td>
+                    <td onclick="editMeal(this)">
+                        <ul>
+                            <li>Grilled chicken wrap</li>
+                            <li>Greek yogurt</li>
+                        </ul>
+                    </td>
+                    <td onclick="editMeal(this)">
+                        <ul>
+                            <li>Vegetable stir-fry</li>
+                            <li>Quinoa</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td onclick="editMeal(this)">
+                        <ul>
+                            <li>Avocado toast</li>
+                            <li>Herbal tea</li>
+                        </ul>
+                    </td>
+                    <td onclick="editMeal(this)">
+                        <ul>
+                            <li>Caesar salad</li>
+                            <li>Fruit smoothie</li>
+                        </ul>
+                    </td>
+                    <td onclick="editMeal(this)">
+                        <ul>
+                            <li>Grilled fish</li>
+                            <li>Steamed vegetables</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Wednesday</td>
+                    <td onclick="editMeal(this)">
+                        <ul>
+                            <li>Oatmeal with berries</li>
+                            <li>Black coffee</li>
+                        </ul>
+                    </td>
+                    <td onclick="editMeal(this)">
+                        <ul>
+                            <li>Grilled chicken wrap</li>
+                            <li>Greek yogurt</li>
+                        </ul>
+                    </td>
+                    <td onclick="editMeal(this)">
+                        <ul>
+                            <li>Vegetable stir-fry</li>
+                            <li>Quinoa</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Thursday</td>
+                    <td onclick="editMeal(this)">
+                        <ul>
+                            <li>Oatmeal with berries</li>
+                            <li>Black coffee</li>
+                        </ul>
+                    </td>
+                    <td onclick="editMeal(this)">
+                        <ul>
+                            <li>Grilled chicken wrap</li>
+                            <li>Greek yogurt</li>
+                        </ul>
+                    </td>
+                    <td onclick="editMeal(this)">
+                        <ul>
+                            <li>Vegetable stir-fry</li>
+                            <li>Quinoa</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Friday</td>
+                    <td onclick="editMeal(this)">
+                        <ul>
+                            <li>Oatmeal with berries</li>
+                            <li>Black coffee</li>
+                        </ul>
+                    </td>
+                    <td onclick="editMeal(this)">
+                        <ul>
+                            <li>Grilled chicken wrap</li>
+                            <li>Greek yogurt</li>
+                        </ul>
+                    </td>
+                    <td onclick="editMeal(this)">
+                        <ul>
+                            <li>Vegetable stir-fry</li>
+                            <li>Quinoa</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Saturday</td>
+                    <td onclick="editMeal(this)">
+                        <ul>
+                            <li>Oatmeal with berries</li>
+                            <li>Black coffee</li>
+                        </ul>
+                    </td>
+                    <td onclick="editMeal(this)">
+                        <ul>
+                            <li>Grilled chicken wrap</li>
+                            <li>Greek yogurt</li>
+                        </ul>
+                    </td>
+                    <td onclick="editMeal(this)">
+                        <ul>
+                            <li>Vegetable stir-fry</li>
+                            <li>Quinoa</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Sunday</td>
+                    <td onclick="editMeal(this)">
+                        <ul>
+                            <li>Oatmeal with berries</li>
+                            <li>Black coffee</li>
+                        </ul>
+                    </td>
+                    <td onclick="editMeal(this)">
+                        <ul>
+                            <li>Grilled chicken wrap</li>
+                            <li>Greek yogurt</li>
+                        </ul>
+                    </td>
+                    <td onclick="editMeal(this)">
+                        <ul>
+                            <li>Vegetable stir-fry</li>
+                            <li>Quinoa</li>
+                        </ul>
+                    </td>
+                </tr>
+                <!-- Repeat similar rows for Wednesday to Sunday -->
+                <!-- Fill in meal items as needed -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
