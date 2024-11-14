@@ -98,3 +98,42 @@ body {
     line-height: 1.6;
     margin-bottom: 15px;
 }
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #fff; /* White icon color */
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ccc; /* Slightly lighter color on hover */
+}
+
+.footer-text {
+    color: #fff; /* White text color */
+    margin-top: 5px;
+}
+
+.footer-text a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
