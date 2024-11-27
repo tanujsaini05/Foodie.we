@@ -3,29 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Holiday Special</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Recipe Page</title>
+    <link rel="stylesheet" href="./CSS/recipe.css">
 </head>
 <body>
     <header class="header">
-        <h1>The Holiday Special</h1>
+        <h1>Delicious Grilled Chicken Recipe</h1>
+        <p>Perfect for a healthy and flavorful meal.</p>
     </header>
 
-    <section class="recipe-details">
-        <img src="./Images/b2.jpeg" alt="Holiday Special" class="recipe-image">
-        <h2>Ingredients</h2>
-        <ul>
-            <li>1 cup oatmeal</li>
-            <li>1/2 cup berries</li>
-            <li>1 cup milk</li>
-            <!-- Add more ingredients -->
-        </ul>
-        
-        <h2>Instructions</h2>
-        <p>1. Add oatmeal to a bowl and pour milk over it...</p>
-        <!-- Add more steps -->
+    <main class="main-container">
+        <section class="recipe-intro">
+            <img src="./Images/b2.jpeg" alt="Grilled Chicken" class="recipe-image">
+            <p>This grilled chicken recipe is an excellent source of protein and a favorite for dinner parties. 
+            Follow these simple steps to create a dish that your family and friends will love.</p>
+        </section>
 
-        <a href="home.html" class="back-link">← Back to Blog</a>
-    </section>
+        <section class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>4 chicken breasts</li>
+                <li>2 tbsp olive oil</li>
+                <li>1 tsp garlic powder</li>
+                <li>1 tsp paprika</li>
+                <li>Salt and pepper to taste</li>
+                <li>Lemon wedges (for serving)</li>
+            </ul>
+        </section>
+
+        <section class="instructions">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Preheat the grill to medium-high heat.</li>
+                <li>Rub chicken breasts with olive oil and season with garlic powder, paprika, salt, and pepper.</li>
+                <li>Place the chicken on the grill and cook for 6-7 minutes on each side.</li>
+                <li>Remove from the grill and let it rest for 5 minutes.</li>
+                <li>Serve with fresh lemon wedges and enjoy!</li>
+            </ol>
+        </section>
+
+        <section class="video-section">
+            <h2>Watch the Recipe</h2>
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+    </main>
+    <a href="home.html" class="back-link">← Back to Blog</a>
+
+    <footer class="footer">
+        <p>© 2024 by The Art of Food. Crafted with ❤️ by Foodie.we</p>
+    </footer>
 </body>
 </html>

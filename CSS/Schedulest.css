@@ -9,8 +9,10 @@
 body {
     font-family: Arial, sans-serif;
     background-image: url('../Images/scbg.jpeg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
     color: #fff;
-    display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -22,6 +24,7 @@ body {
     width: 90%;
     max-width: 1000px;
     text-align: center;
+    padding-left: 250px;
 }
 
 .schedule-container h2 {
@@ -32,7 +35,7 @@ body {
 
 /* Table styling */
 .meal-schedule {
-     /* Replace with your image path */
+    /* Replace with your image path */
     background-size: cover; /* Cover the entire table */
     background-position: center;
     color: #fff; /* For text to stand out */
@@ -144,29 +147,38 @@ body {
 }
 
 .footer {
-    text-align: center;
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
     padding: 20px;
     background-color: #000; /* Black background */
-    color: #fff; /* White text color */
+    color: #fff; /* White text */
     font-family: Arial, sans-serif;
     font-size: 14px;
+    width: 100%; /* Full width */
+    margin-top: 50px; /* Space above footer */
 }
 
 .social-icons {
-    margin-bottom: 10px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    gap: 15px; /* Add space between icons */
+    margin-bottom: 10px; /* Space below icons */
 }
 
 .social-icons a {
-    margin: 0 10px;
     color: #fff; /* White icon color */
-    font-size: 20px;
+    font-size: 20px; /* Icon size */
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color 0.3s, transform 0.3s;
 }
 
 .social-icons a:hover {
-    color: #ccc; /* Slightly lighter color on hover */
+    color: #ccc; /* Lighten color on hover */
+    transform: scale(1.1); /* Slight enlargement on hover */
 }
+
 
 .footer-text {
     color: #fff; /* White text color */
